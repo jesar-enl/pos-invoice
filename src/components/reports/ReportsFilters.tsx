@@ -49,8 +49,8 @@ export function ReportsFilters() {
                         key={p.key}
                         onClick={() => setParam({ preset: p.key, from: null, to: null })}
                         className={`px-3 py-1.5 rounded-full text-xs font-medium border transition-colors ${!isCustom && preset === p.key
-                                ? 'bg-slate-900 text-white border-slate-900'
-                                : 'bg-white text-slate-600 border-slate-200 hover:bg-slate-50'
+                            ? 'bg-brand-navy-800 text-white border-brand-navy-800'
+                            : 'bg-white text-slate-600 border-slate-200 hover:bg-slate-50'
                             }`}
                     >
                         {p.label}

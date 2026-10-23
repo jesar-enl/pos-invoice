@@ -30,7 +30,7 @@ export function SettingsTabs() {
                             className={cn(
                                 'px-4 py-3 text-sm font-medium border-b-2 transition-colors',
                                 active
-                                    ? 'border-slate-900 text-slate-900'
+                                    ? 'border-brand-navy-800 text-slate-900'
                                     : 'border-transparent text-slate-500 hover:text-slate-800'
                             )}
                         >

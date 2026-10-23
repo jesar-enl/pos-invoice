@@ -65,7 +65,7 @@ export default async function ReceiptDetailPage({
                 </div>
 
                 {header.status === 'voided' && header.voided_reason && (
-                    <div className="mt-4 rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-800">
+                    <div className="mt-4 rounded-lg border border-brand-red-200 bg-brand-red-50 px-4 py-3 text-sm text-brand-red-800">
                         <span className="font-medium">Voided</span>
                         {header.voided_at && (
                             <>

@@ -46,7 +46,7 @@ export function MiniBarChart({
                         >
                             <div className="w-full flex-1 flex items-end">
                                 <div
-                                    className="w-full rounded-t bg-slate-900 group-hover:bg-slate-700 transition-colors"
+                                    className="w-full rounded-t bg-brand-navy-800 group-hover:bg-brand-navy-700 transition-colors"
                                     style={{ height: `${Math.max(heightPct, 2)}%` }}
                                 />
                             </div>

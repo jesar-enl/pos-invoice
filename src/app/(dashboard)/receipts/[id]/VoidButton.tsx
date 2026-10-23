@@ -71,7 +71,7 @@ export function VoidButton({ receiptId }: { receiptId: string }) {
                             </div>
 
                             {state.error && (
-                                <div className="rounded-lg border border-red-200 bg-red-50 px-3 py-2 text-sm text-red-700">
+                                <div className="rounded-lg border border-brand-red-200 bg-brand-red-50 px-3 py-2 text-sm text-brand-red-700">
                                     {state.error}
                                 </div>
                             )}

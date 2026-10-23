@@ -20,7 +20,7 @@ export function LoginForm({ next }: { next?: string }) {
 
             {/* Top-level error */}
             {state.error && (
-                <div className="rounded-lg border border-red-200 bg-red-50 px-3 py-2 text-sm text-red-700">
+                <div className="rounded-lg border border-brand-red-200 bg-brand-red-50 px-3 py-2 text-sm text-brand-red-700">
                     {state.error}
                 </div>
             )}
@@ -40,7 +40,7 @@ export function LoginForm({ next }: { next?: string }) {
                     required
                 />
                 {state.fieldErrors?.email && (
-                    <p className="text-xs text-red-600">{state.fieldErrors.email}</p>
+                    <p className="text-xs text-brand-red-600">{state.fieldErrors.email}</p>
                 )}
             </div>
 
@@ -77,7 +77,7 @@ export function LoginForm({ next }: { next?: string }) {
                     </button>
                 </div>
                 {state.fieldErrors?.password && (
-                    <p className="text-xs text-red-600">{state.fieldErrors.password}</p>
+                    <p className="text-xs text-brand-red-600">{state.fieldErrors.password}</p>
                 )}
             </div>
 

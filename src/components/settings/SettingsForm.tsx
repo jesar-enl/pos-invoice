@@ -34,13 +34,13 @@ export function SettingsForm({ tenant }: { tenant: Tenant }) {
 
     function err(field: string) {
         const msg = state.fieldErrors?.[field];
-        return msg ? <p className="text-xs text-red-600 mt-1">{msg}</p> : null;
+        return msg ? <p className="text-xs text-brand-red-600 mt-1">{msg}</p> : null;
     }
 
     return (
         <form action={formAction} className="space-y-6">
             {state.error && (
-                <div className="rounded-lg border border-red-200 bg-red-50 px-3 py-2 text-sm text-red-700">
+                <div className="rounded-lg border border-brand-red-200 bg-brand-red-50 px-3 py-2 text-sm text-brand-red-700">
                     {state.error}
                 </div>
             )}
@@ -81,7 +81,7 @@ export function SettingsForm({ tenant }: { tenant: Tenant }) {
                             defaultValue={tenant.address ?? ''}
                             rows={3}
                             disabled={isPending}
-                            className="w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-slate-900"
+                            className="w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-navy-800"
                         />
                         {err('address')}
                     </div>
@@ -150,7 +150,7 @@ export function SettingsForm({ tenant }: { tenant: Tenant }) {
                                 name="currency"
                                 defaultValue={tenant.currency}
                                 disabled={isPending}
-                                className="h-10 w-full rounded-md border border-slate-200 bg-white px-3 text-sm focus:outline-none focus:ring-2 focus:ring-slate-900"
+                                className="h-10 w-full rounded-md border border-slate-200 bg-white px-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-navy-800"
                             >
                                 {CURRENCIES.map((c) => (
                                     <option key={c} value={c}>
@@ -168,7 +168,7 @@ export function SettingsForm({ tenant }: { tenant: Tenant }) {
                                 name="vat_rate"
                                 defaultValue={String(Number(tenant.vat_rate))}
                                 disabled={isPending}
-                                className="h-10 w-full rounded-md border border-slate-200 bg-white px-3 text-sm focus:outline-none focus:ring-2 focus:ring-slate-900"
+                                className="h-10 w-full rounded-md border border-slate-200 bg-white px-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-navy-800"
                             >
                                 <option value="0.18">18% (standard)</option>
                                 <option value="0">0% (exempt)</option>
@@ -184,7 +184,7 @@ export function SettingsForm({ tenant }: { tenant: Tenant }) {
                             name="timezone"
                             defaultValue={tenant.timezone ?? 'Africa/Kampala'}
                             disabled={isPending}
-                            className="h-10 w-full rounded-md border border-slate-200 bg-white px-3 text-sm focus:outline-none focus:ring-2 focus:ring-slate-900"
+                            className="h-10 w-full rounded-md border border-slate-200 bg-white px-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-navy-800"
                         >
                             <option value="Africa/Kampala">Africa/Kampala (UTC+3)</option>
                             <option value="Africa/Nairobi">Africa/Nairobi (UTC+3)</option>

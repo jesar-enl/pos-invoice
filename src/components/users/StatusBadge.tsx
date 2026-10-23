@@ -22,7 +22,7 @@ export function StatusBadge({
                 'inline-flex items-center rounded-full border px-2 py-0.5 text-xs font-medium',
                 active
                     ? 'bg-green-50 text-green-700 border-green-200'
-                    : 'bg-red-50 text-red-700 border-red-200'
+                    : 'bg-brand-red-50 text-brand-red-700 border-brand-red-200'
             )}
         >
             {active ? 'Active' : 'Suspended'}

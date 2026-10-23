@@ -124,7 +124,7 @@ export const ItemSearch = forwardRef<HTMLInputElement>(
                         onChange={(e) => setQuery(e.target.value)}
                         onKeyDown={handleKey}
                         placeholder="Search product or scan barcode…"
-                        className="w-full pl-10 pr-9 py-3 border border-slate-200 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-slate-900 focus:border-transparent"
+                        className="w-full pl-10 pr-9 py-3 border border-slate-200 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-brand-navy-800 focus:border-transparent"
                         autoFocus
                         autoComplete="off"
                     />

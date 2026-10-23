@@ -17,7 +17,7 @@ export function CustomerRow() {
                 value={draft.customerName}
                 onChange={(e) => setCustomer(e.target.value, null)}
                 placeholder="Walk-in customer (optional)"
-                className="flex-1 px-3 py-2 border border-slate-200 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-slate-900 focus:border-transparent"
+                className="flex-1 px-3 py-2 border border-slate-200 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-brand-navy-800 focus:border-transparent"
             />
             <Button
                 type="button"

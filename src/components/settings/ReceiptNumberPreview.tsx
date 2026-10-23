@@ -46,7 +46,7 @@ export function ReceiptNumberPreview({
                     <input
                         value={prefix}
                         onChange={(e) => setPrefix(e.target.value.toUpperCase())}
-                        className="w-full h-9 rounded-md border border-slate-200 bg-white px-2 text-sm font-mono focus:outline-none focus:ring-2 focus:ring-slate-900"
+                        className="w-full h-9 rounded-md border border-slate-200 bg-white px-2 text-sm font-mono focus:outline-none focus:ring-2 focus:ring-brand-navy-800"
                         maxLength={16}
                     />
                 </label>
@@ -55,7 +55,7 @@ export function ReceiptNumberPreview({
                     <input
                         value={format}
                         onChange={(e) => setFormat(e.target.value)}
-                        className="w-full h-9 rounded-md border border-slate-200 bg-white px-2 text-sm font-mono focus:outline-none focus:ring-2 focus:ring-slate-900"
+                        className="w-full h-9 rounded-md border border-slate-200 bg-white px-2 text-sm font-mono focus:outline-none focus:ring-2 focus:ring-brand-navy-800"
                         maxLength={64}
                     />
                 </label>

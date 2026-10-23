@@ -71,7 +71,7 @@ export function ProductFormModal({ mode, product }: ProductFormModalProps) {
                     )}
 
                     {state.error && (
-                        <div className="rounded-lg border border-red-200 bg-red-50 px-3 py-2 text-sm text-red-700">
+                        <div className="rounded-lg border border-brand-red-200 bg-brand-red-50 px-3 py-2 text-sm text-brand-red-700">
                             {state.error}
                         </div>
                     )}
@@ -88,7 +88,7 @@ export function ProductFormModal({ mode, product }: ProductFormModalProps) {
                             required
                         />
                         {state.fieldErrors?.name && (
-                            <p className="text-xs text-red-600">{state.fieldErrors.name}</p>
+                            <p className="text-xs text-brand-red-600">{state.fieldErrors.name}</p>
                         )}
                     </div>
 
@@ -103,7 +103,7 @@ export function ProductFormModal({ mode, product }: ProductFormModalProps) {
                                 disabled={isPending}
                             />
                             {state.fieldErrors?.sku && (
-                                <p className="text-xs text-red-600">{state.fieldErrors.sku}</p>
+                                <p className="text-xs text-brand-red-600">{state.fieldErrors.sku}</p>
                             )}
                         </div>
                         <div className="space-y-1.5">
@@ -142,7 +142,7 @@ export function ProductFormModal({ mode, product }: ProductFormModalProps) {
                                 required
                             />
                             {state.fieldErrors?.unit_price && (
-                                <p className="text-xs text-red-600">
+                                <p className="text-xs text-brand-red-600">
                                     {state.fieldErrors.unit_price}
                                 </p>
                             )}
@@ -170,7 +170,7 @@ export function ProductFormModal({ mode, product }: ProductFormModalProps) {
                             defaultValue={product?.description ?? ''}
                             rows={2}
                             disabled={isPending}
-                            className="w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-slate-900"
+                            className="w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-navy-800"
                         />
                     </div>
 

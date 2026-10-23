@@ -100,7 +100,7 @@ export function NewSaleClient() {
   return (
     <div className="-m-6 flex flex-col h-[calc(100vh-4rem)]">
       {/* Top strip */}
-      <div className="flex items-center justify-between px-4 py-2 bg-slate-900 text-white text-xs">
+      <div className="flex items-center justify-between px-4 py-2 bg-brand-navy-800 text-white text-xs">
         <span className="font-medium tracking-wide">
           NEW SALE {busy && <span className="text-slate-400">· saving…</span>}
         </span>

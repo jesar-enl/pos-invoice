@@ -3,7 +3,7 @@ import { cn } from '@/lib/utils';
 export function StatusBadge({ status }: { status: string }) {
     const styles: Record<string, string> = {
         paid: 'bg-green-50 text-green-700 border-green-200',
-        voided: 'bg-red-50 text-red-700 border-red-200',
+        voided: 'bg-brand-red-50 text-brand-red-700 border-brand-red-200',
         refunded: 'bg-amber-50 text-amber-700 border-amber-200',
     };
     const label = status.charAt(0).toUpperCase() + status.slice(1);

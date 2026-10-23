@@ -46,6 +46,28 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+  --color-brand-navy-50: #eef3f9;
+  --color-brand-navy-100: #d6e1ef;
+  --color-brand-navy-200: #adc4df;
+  --color-brand-navy-300: #7fa3cd;
+  --color-brand-navy-400: #4f7fb5;
+  --color-brand-navy-500: #2e5d99;
+  --color-brand-navy-600: #1e4778;
+  --color-brand-navy-700: #173a63;
+  --color-brand-navy-800: #0f2a4f;
+  --color-brand-navy-900: #0a1d3a;
+  --color-brand-navy-950: #050e1f;
+  --color-brand-red-50: #fbf0f0;
+  --color-brand-red-100: #f5dada;
+  --color-brand-red-200: #eaafaf;
+  --color-brand-red-300: #dc7e7e;
+  --color-brand-red-400: #c94d4d;
+  --color-brand-red-500: #b02a2a;
+  --color-brand-red-600: #8b1a1a;
+  --color-brand-red-700: #6e1414;
+  --color-brand-red-800: #571313;
+  --color-brand-red-900: #3d0d0d;
+  --color-brand-red-950: #1f0606;
 }
 
 :root {

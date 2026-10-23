@@ -50,7 +50,7 @@ export function InviteUserModal() {
 
                 <form action={formAction} className="p-6 space-y-4">
                     {state.error && (
-                        <div className="rounded-lg border border-red-200 bg-red-50 px-3 py-2 text-sm text-red-700">
+                        <div className="rounded-lg border border-brand-red-200 bg-brand-red-50 px-3 py-2 text-sm text-brand-red-700">
                             {state.error}
                         </div>
                     )}
@@ -67,7 +67,7 @@ export function InviteUserModal() {
                             required
                         />
                         {state.fieldErrors?.email && (
-                            <p className="text-xs text-red-600">
+                            <p className="text-xs text-brand-red-600">
                                 {state.fieldErrors.email}
                             </p>
                         )}
@@ -82,7 +82,7 @@ export function InviteUserModal() {
                             disabled={isPending}
                         />
                         {state.fieldErrors?.full_name && (
-                            <p className="text-xs text-red-600">
+                            <p className="text-xs text-brand-red-600">
                                 {state.fieldErrors.full_name}
                             </p>
                         )}
@@ -95,7 +95,7 @@ export function InviteUserModal() {
                             name="role"
                             defaultValue="staff"
                             disabled={isPending}
-                            className="h-10 w-full rounded-md border border-slate-200 bg-white px-3 text-sm focus:outline-none focus:ring-2 focus:ring-slate-900"
+                            className="h-10 w-full rounded-md border border-slate-200 bg-white px-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-navy-800"
                         >
                             <option value="admin">Admin — manage everything except billing</option>
                             <option value="staff">Staff — create sales and receipts</option>
